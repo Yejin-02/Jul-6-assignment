@@ -68,3 +68,13 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@font-face {
+  font-family: "pretendard-bold";
+  src: url("./woff/Pretendard-Bold.woff");
+}
+
+@font-face {
+  font-family: "pretendard-semibold";
+  src: url("./woff/Pretendard-SemiBold.woff");
+}

@@ -1,12 +1,18 @@
 import styled, { CSSProperties } from "styled-components";
 
+import cloudImg from "../assets/TofuCloud.svg";
+import logoImg from "../assets/TofuLogo.svg";
+import pinImg from "../assets/TofuPin.svg";
+
 const TopNav = () => {
   return (
     <TopNavFrame>
-      <TopNavLogoFrame>Logo</TopNavLogoFrame>
+      <TopNavLogoFrame>
+        <img src={logoImg} />
+      </TopNavLogoFrame>
       <TopNavButtonsFrame>
-        <button>button1</button>
-        <button>button2</button>
+        <CloudImg src={cloudImg} />
+        <img src={pinImg} />
       </TopNavButtonsFrame>
     </TopNavFrame>
   );
@@ -18,7 +24,6 @@ const TopNavFrame = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
 `;
 
 const TopNavLogoFrame = styled.div`
@@ -27,14 +32,16 @@ const TopNavLogoFrame = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
 `;
 
 const TopNavButtonsFrame = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
+`;
+
+const CloudImg = styled.img`
+  margin-right: 20px;
 `;
 
 export default TopNav;
