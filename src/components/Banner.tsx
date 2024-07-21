@@ -20,6 +20,9 @@ const BannerImg = styled.div`
   font-family: "Pretendard";
   font-weight: 500;
   font-size: 20px;
+  @media (max-width: 400px) {
+    width: calc(100vw - 32px);
+  }
 `;
 
 export default Banner;

@@ -31,6 +31,9 @@ const AccountFrame = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 26px;
+  @media (max-width: 400px) {
+    width: 99%;
+  }
 `;
 
 const LogoAndDetails = styled.div`
@@ -73,6 +76,7 @@ const AccountBalance = styled.p`
   font-family: "pretendard-bold";
   font-size: 20px;
   margin: 0;
+  text-align: start;
 `;
 
 const SendMoneyButton = styled.button`

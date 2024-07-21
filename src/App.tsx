@@ -26,6 +26,11 @@ const Background = styled.div`
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  @media (max-width: 400px) {
+    align-items: flex-start;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 `;
 
 export default App;

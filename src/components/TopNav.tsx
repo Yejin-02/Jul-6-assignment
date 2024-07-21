@@ -24,6 +24,9 @@ const TopNavFrame = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 400px) {
+    width: calc(100vw - 32px);
+  }
 `;
 
 const TopNavLogoFrame = styled.div`

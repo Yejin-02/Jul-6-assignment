@@ -46,7 +46,7 @@ const TofuBank = () => {
         currency={accountData2.currency}
       />
       <LineFrame>
-        <img src={lineImg} />
+        <LineImg src={lineImg} />
       </LineFrame>
       <Advertisement
         smallText={adData1.smallText}
@@ -70,6 +70,9 @@ const TofuBankFrame = styled.div`
   align-items: flex-start;
   border-radius: 20px;
   background-color: white;
+  @media (max-width: 400px) {
+    width: calc(100vw - 76px);
+  }
 `;
 
 const TofuBankTitleBox = styled.div`
@@ -80,6 +83,9 @@ const TofuBankTitleBox = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 400px) {
+    width: 99%;
+  }
 `;
 
 const TofuBankTitle = styled.div`
@@ -94,4 +100,9 @@ const LineFrame = styled.div`
   align-items: flex-start;
 `;
 
+const LineImg = styled.img`
+  @media (max-width: 400px) {
+    width: 99%;
+  }
+`
 export default TofuBank;
