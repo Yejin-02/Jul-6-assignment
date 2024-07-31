@@ -25,15 +25,12 @@ const Account = ({ name, balance, logoColor, currency }: iAccount) => {
 };
 
 const AccountFrame = styled.div`
-  width: 321px;
+  width: 100%;
   height: 41px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 26px;
-  @media (max-width: 400px) {
-    width: 99%;
-  }
 `;
 
 const LogoAndDetails = styled.div`

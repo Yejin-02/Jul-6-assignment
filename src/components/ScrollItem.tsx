@@ -25,6 +25,7 @@ const ScrollItemBox = styled.div`
   flex-shrink: 0;
   background-color: white;
   border-radius: 20px;
+  min-width: 0;
 `;
 
 const TextsFrame = styled.div`

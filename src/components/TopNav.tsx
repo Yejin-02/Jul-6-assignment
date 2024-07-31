@@ -19,14 +19,11 @@ const TopNav = () => {
 };
 
 const TopNavFrame = styled.div`
-  width: 368px;
+  width: 100%;
   height: 89px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media (max-width: 400px) {
-    width: calc(100vw - 32px);
-  }
 `;
 
 const TopNavLogoFrame = styled.div`

@@ -12,17 +12,14 @@ const BannerImg = styled.div`
   background-position: center;
   border-radius: 20px;
   height: 150px;
-  width: 368px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-family: "Pretendard";
-  font-weight: 500;
+  font-weight: 450;
   font-size: 20px;
-  @media (max-width: 400px) {
-    width: calc(100vw - 32px);
-  }
 `;
 
 export default Banner;

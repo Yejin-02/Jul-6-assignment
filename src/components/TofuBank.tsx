@@ -59,33 +59,29 @@ const TofuBank = () => {
 };
 
 const TofuBankFrame = styled.div`
-  width: 324px;
-  height: 256px;
+  box-sizing: border-box;
+  width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 22px;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+
   border-radius: 20px;
   background-color: white;
-  @media (max-width: 400px) {
-    width: calc(100vw - 76px);
-  }
 `;
 
 const TofuBankTitleBox = styled.div`
   height: 29px;
-  width: 321px;
+  width: 100%;
   margin-bottom: 26px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  @media (max-width: 400px) {
-    width: 99%;
-  }
 `;
 
 const TofuBankTitle = styled.div`
@@ -104,5 +100,6 @@ const LineImg = styled.img`
   @media (max-width: 400px) {
     width: 99%;
   }
-`
+`;
+
 export default TofuBank;

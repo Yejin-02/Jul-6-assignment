@@ -1,4 +1,4 @@
-import styled, { CSSProperties } from "styled-components";
+import styled from "styled-components";
 
 import ScrollItem, { iScrollItemBox } from "./ScrollItem";
 
@@ -44,8 +44,9 @@ const Scroll = () => {
 
 const ScrollFrame = styled.div`
   height: 175px;
-  width: 368px;
+  width: 100%;
   display: flex;
+  overflow: auto;
 `;
 
 export default Scroll;
